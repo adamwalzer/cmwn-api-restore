@@ -4,7 +4,7 @@ namespace Restore\Service;
 
 /**
  * Interface RestoreDbServiceInterface
- * @package Restore
+ * @package Restore\Service
  */
 interface RestoreDbServiceInterface
 {

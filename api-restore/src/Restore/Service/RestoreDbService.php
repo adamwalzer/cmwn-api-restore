@@ -8,7 +8,7 @@ use Zend\Db\TableGateway\TableGateway;
 
 /**
  * Class RestoreDbService
- * @package Restore
+ * @package Restore\Service
  */
 class RestoreDbService implements RestoreDbServiceInterface
 {

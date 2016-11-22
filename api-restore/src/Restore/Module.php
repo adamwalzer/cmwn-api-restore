@@ -4,7 +4,7 @@ namespace Restore;
 
 /**
  * Class Module
- * @package RestoreDb
+ * @package Restore
  */
 class Module
 {

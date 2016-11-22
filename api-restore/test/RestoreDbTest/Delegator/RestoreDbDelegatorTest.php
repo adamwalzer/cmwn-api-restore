@@ -11,7 +11,7 @@ use Zend\EventManager\Event;
 
 /**
  * Class RestoreDbDelegatorTest
- * @package RestoreDb\test\Delegator
+ * @package RestoreDbTest\Delegator
  */
 class RestoreDbDelegatorTest extends \PHPUnit_Framework_TestCase implements AuthenticationServiceAwareInterface
 {
