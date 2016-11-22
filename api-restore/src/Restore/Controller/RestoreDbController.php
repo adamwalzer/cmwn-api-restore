@@ -5,6 +5,10 @@ namespace Restore\Controller;
 use Restore\Service\RestoreDbServiceInterface;
 use Zend\Mvc\Controller\AbstractConsoleController as ConsoleController;
 
+/**
+ * Class RestoreDbController
+ * @package Restore\Controller
+ */
 class RestoreDbController extends ConsoleController
 {
     /**

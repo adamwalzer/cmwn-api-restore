@@ -9,7 +9,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Class RestoreDbControllerFactory
- * @package Restore
+ * @package Restore\Controller
  */
 class RestoreDbControllerFactory implements FactoryInterface
 {

@@ -7,7 +7,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Class RestoreDbDelegatorFactory
- * @package RestoreDb\Delegator
+ * @package Restore\Delegator
  */
 class RestoreDbDelegatorFactory implements DelegatorFactoryInterface
 {
