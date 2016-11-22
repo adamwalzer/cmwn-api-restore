@@ -28,7 +28,7 @@ return [
                 'options' => [
                     'route' => '/restore',
                     'defaults' => [
-                        'controller' => 'Restore\Controller\RestoreDb',
+                        'controller' => 'Restore\Controller\RestoreDbController',
                         'action'     => 'restore',
                     ],
                 ],

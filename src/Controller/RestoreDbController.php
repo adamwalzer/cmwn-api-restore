@@ -3,13 +3,14 @@
 namespace Restore\Controller;
 
 use Restore\Service\RestoreDbServiceInterface;
-use Zend\Mvc\Controller\AbstractConsoleController as ConsoleController;
+use ZF\ApiProblem\ApiProblem;
+use Zend\Mvc\Controller\AbstractActionController as ActionController;
 
 /**
  * Class RestoreDbController
  * @package Restore\Controller
  */
-class RestoreDbController extends ConsoleController
+class RestoreDbController extends ActionController
 {
     /**
      * @var RestoreDbServiceInterface
@@ -25,8 +26,13 @@ class RestoreDbController extends ConsoleController
         $this->restoreService = $restoreService;
     }
 
+    /**
+     * @return ApiProblem
+     */
     public function restoreAction()
     {
         $this->restoreService->runDbStateRestorer();
+
+        return new ApiProblem(200, 'Database restored');
     }
 }

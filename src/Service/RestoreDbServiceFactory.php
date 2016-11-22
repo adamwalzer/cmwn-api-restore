@@ -17,8 +17,10 @@ class RestoreDbServiceFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
+        $config = $serviceLocator->get('config');
+        $testData = isset($config['test-data']) ? $config['test-data'] : [];
         $adapter = $serviceLocator->get(Adapter::class);
-        $realService = new RestoreDbService($adapter);
+        $realService = new RestoreDbService($adapter, $testData);
         return $realService;
     }
 }

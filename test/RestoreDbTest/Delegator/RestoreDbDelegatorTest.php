@@ -4,7 +4,6 @@ namespace RestoreDbTest\Delegator;
 
 use Restore\Delegator\RestoreDbDelegator;
 use Restore\Service\RestoreDbServiceInterface;
-use Security\Authentication\AuthenticationService;
 use Security\Authentication\AuthenticationServiceAwareInterface;
 use Security\Authentication\AuthenticationServiceAwareTrait;
 use Zend\EventManager\Event;
@@ -37,8 +36,7 @@ class RestoreDbDelegatorTest extends \PHPUnit_Framework_TestCase implements Auth
      */
     public function setUpService()
     {
-        $this->markTestSkipped('This is a unit test it should not need a database');
-        $this->service = \Mockery::mock('\RestoreDb\Service\RestoreDbService');
+        $this->service = \Mockery::mock(RestoreDbServiceInterface::class);
     }
 
     /**
