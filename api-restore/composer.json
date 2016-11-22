@@ -1,0 +1,11 @@
+{
+  "name": "cmwn/restore",
+  "autoload": {
+    "psr-4": {
+      "Restore\\": "src/"
+    },
+    "classmap": [
+        "./Module.php"
+    ]
+  }
+}
