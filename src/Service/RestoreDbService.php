@@ -25,10 +25,11 @@ class RestoreDbService implements RestoreDbServiceInterface
     /**
      * RestoreDbService constructor.
      * @param AdapterInterface $adapter
+     * @param array $dataSet
      */
-    public function __construct(AdapterInterface $adapter)
+    public function __construct(AdapterInterface $adapter, array $dataSet)
     {
-        $this->dataSet = __DIR__ . '/../Dataset/RestoreDataSet.php';
+        $this->dataSet = $dataSet;
         $this->adapter = $adapter;
     }
 

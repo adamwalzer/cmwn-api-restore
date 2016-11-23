@@ -29,9 +29,9 @@ class RestoreDbDelegator implements RestoreDbServiceInterface
 
     /**
      * RestoreDbDelegator constructor.
-     * @param RestoreDbService $restoreDbService
+     * @param RestoreDbServiceInterface $restoreDbService
      */
-    public function __construct(RestoreDbService $restoreDbService)
+    public function __construct(RestoreDbServiceInterface $restoreDbService)
     {
         $this->realService = $restoreDbService;
     }
